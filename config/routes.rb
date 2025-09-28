@@ -9,6 +9,18 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
+  # Serve Vite assets
+  get "/vite/*path", to: proc { |env|
+    path = env["PATH_INFO"].gsub("/vite/", "")
+    file_path = Rails.root.join("public", "vite", path)
+    
+    if File.exist?(file_path)
+      [200, { "Content-Type" => Rack::Mime.mime_type(File.extname(file_path)) }, [File.read(file_path)]]
+    else
+      [404, { "Content-Type" => "text/plain" }, ["Not Found"]]
+    end
+  }
+
   # Defines the root path route ("/")
   root "home#index"
 end
