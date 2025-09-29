@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  root: '.',
   build: {
     outDir: 'public/vite',
     rollupOptions: {
@@ -18,6 +19,12 @@ export default defineConfig({
   },
   server: {
     port: 3036,
-    host: true
+    host: true,
+    cors: true
+  },
+  resolve: {
+    alias: {
+      '@': '/app/javascript'
+    }
   }
 })
