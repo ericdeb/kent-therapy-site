@@ -60,7 +60,7 @@ const Home = () => {
       {/* About Preview */}
       <section className="about-preview">
         <div className="container">
-          <div className="about-content">
+          <div className="about-content-home">
             <div className="about-text">
               <h2>Meet Kent Stormans</h2>
               <p>

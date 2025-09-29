@@ -11,7 +11,7 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-main">
-            <div className="about-text">
+            <div className="about-text" style={{ flex: 1 }}>
               <h3>My Approach to Therapy</h3>
               <p>
                 I believe that healing happens in relationship. My approach to therapy is collaborative, 
@@ -26,27 +26,6 @@ const About = () => {
               </p>
 
               <br />
-              <h3>My Background</h3>
-              <p>
-                I completed my Master's in Clinical Psychology and have been practicing for over 8 years. 
-                I specialize in working with adults dealing with anxiety, depression, trauma, and relationship 
-                challenges. My training includes:
-              </p>
-              <br />
-              <ul className="training-list">
-                <li>Trauma-Informed Cognitive Behavioral Therapy (CBT)</li>
-                <li>Eye Movement Desensitization and Reprocessing (EMDR)</li>
-                <li>Internal Family Systems (IFS)</li>
-                <li>Mindfulness-Based Stress Reduction</li>
-                <li>Attachment-Based Therapy</li>
-              </ul>
-              <br />
-              <h3>What to Expect</h3>
-              <p>
-                In our work together, you can expect a warm, non-judgmental space where your experiences 
-                are validated and your strengths are recognized. I'll meet you where you are and help you 
-                move toward where you want to be.
-              </p>
             </div>
 
             <div className="about-sidebar">
@@ -75,6 +54,29 @@ const About = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div style={{ padding: '0 12rem' }}>
+          <h3 style={{ textAlign: 'center' }}>My Background</h3>
+            <p>
+              I completed my Master's in Clinical Psychology and have been practicing for over 8 years. 
+              I specialize in working with adults dealing with anxiety, depression, trauma, and relationship 
+              challenges. My training includes:
+            </p>
+            <ul className="training-list">
+              <li>Trauma-Informed Cognitive Behavioral Therapy (CBT)</li>
+              <li>Eye Movement Desensitization and Reprocessing (EMDR)</li>
+              <li>Internal Family Systems (IFS)</li>
+              <li>Mindfulness-Based Stress Reduction</li>
+              <li>Attachment-Based Therapy</li>
+            </ul>
+            <br />
+            <h3 style={{ textAlign: 'center' }}>What to Expect</h3>
+            <p>
+              In our work together, you can expect a warm, non-judgmental space where your experiences 
+              are validated and your strengths are recognized. I'll meet you where you are and help you 
+              move toward where you want to be.
+            </p>
         </div>
 
         <div className="philosophy">
