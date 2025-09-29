@@ -2,4 +2,4 @@
 /tmp/cache/bootsnap/compile-cache-iseq/*
 /tmp/cache
 log/development.log
-log
+log/*
