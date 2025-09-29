@@ -7,19 +7,23 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Find Your Path to Healing and Growth
+            Find the peace, connection, and self-worth you've been seeking.
           </h1>
           <p className="hero-subtitle">
-            Life can feel overwhelming at times, like waves that swell over you as you try to draw in your next breath. 
-            You might feel like you're treading water or slipping just below the surface.
+            <strong>Do you find yourself:</strong>
           </p>
           <p className="hero-description">
-            Maybe you recently discovered a deep desire just beginning to swell in you, but you aren't quite sure 
-            what to do with it just yet. Maybe your true self feels sunk deep below the surface of your life.
+            Feeling overwhelmed by self-doubt and insecurity? Feeling disconnected from your intuition and body? 
+            Struggling to make decisions or commitments for fear of making the "wrong" choice and feeling regret? 
+            Feeling anxious, on edge, and exhausted, even right when you wake up?
           </p>
           <p className="hero-call-to-action">
-            We all need support when life feels too painful or confusing. If you would like support as you are 
-            learning to navigate the challenges you are facing, reach out. Set up a free consultation to get started.
+            It might feel like you've tried everything and can't seem to find a sense of calm or clarity in your daily life. 
+            Or perhaps it feels like you're going in circles, repeating patterns, and can't find your way out.
+          </p>
+          <p className="hero-call-to-action">
+            It doesn't have to be this way. I believe that when we slow down to explore what's happening beneath the surface, 
+            we can begin to truly understand you and your emotions.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">Schedule Consultation</button>

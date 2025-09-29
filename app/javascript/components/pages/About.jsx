@@ -5,33 +5,34 @@ const About = () => {
     <div className="about">
       <div className="container">
         <div className="about-header">
-          <h1>About Kent Stormans</h1>
+          <h2>About Kent Stormans</h2>
           <p className="about-subtitle">Licensed Therapist & Mental Health Professional</p>
         </div>
 
         <div className="about-content">
           <div className="about-main">
             <div className="about-text">
-              <h2>My Approach to Therapy</h2>
+              <h3>My Approach to Therapy</h3>
               <p>
                 I believe that healing happens in relationship. My approach to therapy is collaborative, 
                 compassionate, and grounded in evidence-based practices. I work with individuals who are 
                 ready to explore their inner world and make meaningful changes in their lives.
               </p>
-              
+              <br />
               <p>
                 As a trauma-informed therapist, I understand that many of our current struggles are rooted 
                 in past experiences. Together, we'll gently explore these patterns while building new 
                 skills and perspectives that serve you better.
               </p>
 
+              <br />
               <h3>My Background</h3>
               <p>
                 I completed my Master's in Clinical Psychology and have been practicing for over 8 years. 
                 I specialize in working with adults dealing with anxiety, depression, trauma, and relationship 
                 challenges. My training includes:
               </p>
-              
+              <br />
               <ul className="training-list">
                 <li>Trauma-Informed Cognitive Behavioral Therapy (CBT)</li>
                 <li>Eye Movement Desensitization and Reprocessing (EMDR)</li>
@@ -39,7 +40,7 @@ const About = () => {
                 <li>Mindfulness-Based Stress Reduction</li>
                 <li>Attachment-Based Therapy</li>
               </ul>
-
+              <br />
               <h3>What to Expect</h3>
               <p>
                 In our work together, you can expect a warm, non-judgmental space where your experiences 
