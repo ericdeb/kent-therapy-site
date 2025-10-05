@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div className="services">
       <div className="container">
-        <div className="services-header">
+        <div className="services-header" style={{ marginTop: '4rem' }}>
           <h1>Services & Specialties</h1>
           <p className="services-subtitle">
             Comprehensive mental health services tailored to your unique needs and goals

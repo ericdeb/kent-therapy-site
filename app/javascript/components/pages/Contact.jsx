@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="location">
               <h2>Office Location</h2>
               <div className="address">
-                <h3>Kent Stormans Therapy</h3>
+                <h3>Kent Stormans Counseling</h3>
                 <p>1234 Main Street, Suite 200</p>
                 <p>Seattle, WA 98101</p>
               </div>
