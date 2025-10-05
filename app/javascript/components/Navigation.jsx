@@ -19,7 +19,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <h2>Kent Stormans Counseling</h2>
+          <h2 style={{ marginTop: '1rem' }}>Kent Stormans Counseling</h2>
         </div>
         
         <div className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
