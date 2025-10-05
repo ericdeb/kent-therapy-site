@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="container">
-        <div className="contact-header">
+        <div className="contact-header" style={{ marginTop: '4rem' }}>
           <h1>Contact & Location</h1>
           <p className="contact-subtitle">
             Ready to take the next step? I'm here to help you begin your journey to healing and growth.
