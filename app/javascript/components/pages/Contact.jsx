@@ -1,103 +1,181 @@
 import React, { useState } from 'react'
+import Header from '../Header'
 
-const Contact = () => {
+const Contact = ({ setCurrentPage, currentPage }) => {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
-    phone: '',
-    message: '',
-    preferredContact: 'email'
+    subject: '',
+    message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null)
+  const [submitError, setSubmitError] = useState(null)
+
+  const getCSRFToken = () => {
+    const metaTag = document.querySelector('meta[name="csrf-token"]')
+    return metaTag ? metaTag.getAttribute('content') : null
+  }
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     })
+    // Clear status messages when user starts typing
+    if (submitStatus || submitError) {
+      setSubmitStatus(null)
+      setSubmitError(null)
+    }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message. I will get back to you within 24 hours.')
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+    setSubmitError(null)
+
+    try {
+      const csrfToken = getCSRFToken()
+      const response = await fetch('/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': csrfToken,
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          contact: formData
+        })
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus(data.message || 'Thank you for your message. I will get back to you as soon as possible.')
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          subject: '',
+          message: ''
+        })
+      } else {
+        setSubmitError(data.errors ? data.errors.join(', ') : 'There was an error submitting your message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setSubmitError('There was an error submitting your message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
-    <div className="contact">
-      <div className="container">
-        <div className="contact-header" style={{ marginTop: '4rem' }}>
-          <h1>Contact & Location</h1>
-          <p className="contact-subtitle">
-            Ready to take the next step? I'm here to help you begin your journey to healing and growth.
-          </p>
+    <div className="home">
+      {/* Header Section with Name and Contact Info */}
+      <Header setCurrentPage={setCurrentPage} />
+
+      {/* Menu Section */}
+      <div className="nav-menu-wrapper">
+        <div className="nav-line-left"></div>
+        <div className="page-menu">
+          <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
+          <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
+          <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
+          <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
         </div>
+        <div className="nav-line-right"></div>
+      </div>
 
-        <div className="contact-content">
-          <div className="contact-info">
-            <div className="contact-details">
-              <h2>Get in Touch</h2>
-              <div className="contact-item">
-                <h3>Phone</h3>
-                <p>(206) 555-0123</p>
-              </div>
-              <div className="contact-item">
-                <h3>Email</h3>
-                <p>kent@kentstormanstherapy.com</p>
-              </div>
-              <div className="contact-item">
-                <h3>Office Hours</h3>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 2:00 PM</p>
-                <p>Sunday: Closed</p>
-              </div>
+      {/* Gray divider line below navigation */}
+      <div className="divider-line"></div>
+
+      {/* Hero Section with Image */}
+      <section className="connect-hero-section">
+        <div className="connect-hero-image"></div>
+      </section>
+
+      {/* Contact Content Section */}
+      <div className="contact-page-content">
+        <div className="contact-two-column">
+          {/* Left Column: Contact Info and Map */}
+          <div className="contact-left-column">
+            
+            <div className="contact-office">
+              <p>
+              If you'd like to explore the possibility of working together, you're welcome to schedule a free consultation. I'd love to hear from you
+              </p>
             </div>
 
-            <div className="location">
-              <h2>Office Location</h2>
-              <div className="address">
-                <h3>Kent Stormans Counseling</h3>
-                <p>1234 Main Street, Suite 200</p>
-                <p>Seattle, WA 98101</p>
-              </div>
-              <div className="location-details">
-                <p><strong>Parking:</strong> Free parking available in the building garage</p>
-                <p><strong>Accessibility:</strong> Wheelchair accessible entrance and elevator</p>
-                <p><strong>Public Transit:</strong> 2 blocks from the Metro bus stop</p>
-              </div>
-              <button className="btn-secondary">Get Directions</button>
+            <div className="contact-phone">
+              <strong>Phone: 503.395.7192</strong>
             </div>
 
-            <div className="emergency-info">
-              <h3>Emergency Resources</h3>
-              <p>If you are experiencing a mental health emergency, please call:</p>
-              <ul>
-                <li><strong>National Suicide Prevention Lifeline:</strong> 988</li>
-                <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
-                <li><strong>Emergency Services:</strong> 911</li>
-              </ul>
+            <div className="contact-map-container">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.3766%2C47.6763%2C-122.3666%2C47.6863&layer=mapnik&marker=47.6813%2C-122.3716"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location Map"
+              ></iframe>
             </div>
           </div>
 
-          <div className="contact-form-container">
-            <h2>Schedule a Consultation</h2>
-            <p>Fill out the form below to schedule a free 15-minute consultation.</p>
-            
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Full Name *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
+          {/* Right Column: Contact Form */}
+          <div className="contact-right-column">
+            <div className="contact-form-intro">
+              <p>
+              To schedule an appointment or if you have any questions, please fill out the form below and I’ll get back to you as soon as possible.
+              </p>
+            </div>
+
+            <form className="contact-form-new" onSubmit={handleSubmit}>
+              {submitStatus && (
+                <div className="form-message form-message-success">
+                  {submitStatus}
+                </div>
+              )}
+              {submitError && (
+                <div className="form-message form-message-error">
+                  {submitError}
+                </div>
+              )}
+
+              <div className="form-group-name form-group">
+                <label htmlFor="firstName">Name</label>
+                <div className="name-fields">
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                    disabled={isSubmitting}
+                  />
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                    disabled={isSubmitting}
+                  />
+                </div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">Email Address *</label>
+                <label htmlFor="email">Email Address</label>
                 <input
                   type="email"
                   id="email"
@@ -105,76 +183,52 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="phone">Phone Number</label>
+                <label htmlFor="subject">Subject</label>
                 <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleChange}
+                  required
+                  disabled={isSubmitting}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="preferredContact">Preferred Contact Method</label>
-                <select
-                  id="preferredContact"
-                  name="preferredContact"
-                  value={formData.preferredContact}
-                  onChange={handleChange}
-                >
-                  <option value="email">Email</option>
-                  <option value="phone">Phone</option>
-                  <option value="text">Text Message</option>
-                </select>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Message *</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
-                  rows="5"
+                  rows="6"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Please tell me a bit about what you'd like to work on in therapy..."
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
-              <button type="submit" className="btn-primary full-width">
-                Send Message
+              <button type="submit" className="contact-submit-btn" disabled={isSubmitting}>
+                {isSubmitting ? 'SUBMITTING...' : 'SUBMIT'}
               </button>
             </form>
           </div>
         </div>
-
-        <div className="faq-section">
-          <h2>Frequently Asked Questions</h2>
-          <div className="faq-grid">
-            <div className="faq-item">
-              <h3>How do I schedule my first appointment?</h3>
-              <p>You can schedule a free 15-minute consultation by filling out the contact form above, calling me directly, or emailing me. During this consultation, we'll discuss your needs and determine if we're a good fit.</p>
-            </div>
-            <div className="faq-item">
-              <h3>What should I expect in my first session?</h3>
-              <p>Your first session will be an opportunity for us to get to know each other. I'll ask about your background, current concerns, and goals for therapy. This helps me understand how best to support you.</p>
-            </div>
-            <div className="faq-item">
-              <h3>How long does therapy typically last?</h3>
-              <p>The length of therapy varies depending on your individual needs and goals. Some people benefit from short-term therapy (8-12 sessions), while others prefer longer-term support. We'll discuss this together and adjust as needed.</p>
-            </div>
-            <div className="faq-item">
-              <h3>Do you offer virtual sessions?</h3>
-              <p>Yes, I offer both in-person and virtual therapy sessions. Virtual sessions are conducted through a secure, HIPAA-compliant platform. We can discuss which option works best for you.</p>
-            </div>
-          </div>
-        </div>
       </div>
+
+      {/* Gray divider line above footer */}
+      <div className="divider-line"></div>
+
+      {/* Footer */}
+      <footer className="site-footer">
+        <div className="footer-content">
+        </div>
+      </footer>
     </div>
   )
 }

@@ -1,97 +1,60 @@
 import React from 'react'
+import Header from '../Header'
 
-const Home = () => {
+const Home = ({ setCurrentPage, currentPage }) => {
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            Find the peace, connection, and self-worth you've been seeking.
-          </h1>
-          <p className="hero-subtitle">
-            <strong>Do you find yourself:</strong>
-          </p>
-          <p className="hero-description">
-            Feeling overwhelmed by self-doubt and insecurity? Feeling disconnected from your intuition and body? 
-            Struggling to make decisions or commitments for fear of making the "wrong" choice and feeling regret? 
-            Feeling anxious, on edge, and exhausted, even right when you wake up?
-          </p>
-          <p className="hero-call-to-action">
-            It might feel like you've tried everything and can't seem to find a sense of calm or clarity in your daily life. 
-            Or perhaps it feels like you're going in circles, repeating patterns, and can't find your way out.
-          </p>
-          <p className="hero-call-to-action">
-            It doesn't have to be this way. I believe that when we slow down to explore what's happening beneath the surface, 
-            we can begin to truly understand you and your emotions.
-          </p>
-          <div className="hero-buttons">
-            <button className="btn-primary">Schedule Consultation</button>
-            <button className="btn-secondary">Learn More</button>
+      {/* Header Section with Name and Contact Info */}
+      <Header setCurrentPage={setCurrentPage} />
+
+      {/* Menu Section - matches reference site */}
+      <div className="nav-menu-wrapper">
+        <div className="nav-line-left"></div>
+        <div className="page-menu">
+          <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
+          <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
+          <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
+          <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
+        </div>
+        <div className="nav-line-right"></div>
+      </div>
+
+      {/* Gray divider line below navigation */}
+      <div className="divider-line"></div>
+
+      {/* Hero Section with Image and Welcome Text */}
+      <section className="hero-section">
+        <div className="hero-image">
+          <div className="hero-overlay">
+            <h1 className="hero-title">Welcome</h1>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="features">
-        <div className="container">
-          <h2 className="section-title">How I Can Help</h2>
-          <div className="features-grid">
-            <div className="feature-card">
-              <h3>Individual Therapy</h3>
-              <p>One-on-one sessions tailored to your unique needs and goals, providing a safe space for exploration and healing.</p>
-            </div>
-            <div className="feature-card">
-              <h3>Trauma-Informed Care</h3>
-              <p>Specialized approaches for processing trauma and building resilience, helping you reclaim your sense of safety and control.</p>
-            </div>
-            <div className="feature-card">
-              <h3>Anxiety & Depression</h3>
-              <p>Evidence-based techniques to manage symptoms and develop coping strategies for lasting emotional well-being.</p>
-            </div>
-            <div className="feature-card">
-              <h3>Relationship Issues</h3>
-              <p>Support for improving communication, setting boundaries, and building healthier connections with others.</p>
-            </div>
-          </div>
+      {/* Content Section */}
+      <section className="content-section">
+        <div className="content-wrapper">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Hi, I'm Kent (he / him)</h2>
+          <p style={{ textAlign: 'center' }}>
+            I'm a therapist in Washington state + California, working with adults and teens. I support people through challenges like anxiety, trauma / abuse, relationships, depression, and work with neurodiverse individuals.
+          </p>
+          <p style={{ textAlign: 'center' }}>
+            I'm here to meet you where you're at. Therapy that's relational, connection-oriented. Finding a sense of home in yourself, even if home feels far away.
+          </p>
+          <p style={{ textAlign: 'center', fontStyle: 'italic', marginTop: '2rem', fontWeight: '500', marginTop: '3em' }}>
+            "I was born a long way from where I belong…I'm on my way home" - Bob Dylan
+          </p>
         </div>
       </section>
 
-      {/* About Preview */}
-      <section className="about-preview">
-        <div className="container">
-          <div className="about-content-home">
-            <div className="about-text">
-              <h2>Meet Kent Stormans</h2>
-              <p>
-                I'm here to offer a space where you can explore your experiences with compassion and curiosity. 
-                As a licensed therapist, I use a combination of evidence-based approaches to help you reconnect 
-                with yourself and those around you with confidence and clarity.
-              </p>
-              <p>
-                While we may explore tools to bring support to symptoms in the short-term, my approach to therapy 
-                focuses on the root of your struggles by meeting weekly to explore and truly understand your experiences. 
-                This is a place where you have a chance to slow down and come home to yourself.
-              </p>
-              <button className="btn-primary">Learn More About Me</button>
-            </div>
-            <div className="about-image">
-              <div className="placeholder-image">
-                <span>Professional Photo</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Gray divider line above footer */}
+      <div className="divider-line"></div>
 
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <h2>Ready to Begin Your Journey?</h2>
-          <p>Take the first step towards healing and growth. Schedule a free consultation to see if we're a good fit.</p>
-          <button className="btn-primary large">Schedule Free Consultation</button>
+      {/* Footer */}
+      <footer className="site-footer">
+        <div className="footer-content">
         </div>
-      </section>
+      </footer>
     </div>
   )
 }

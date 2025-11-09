@@ -23,4 +23,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+
+  # Contact form submission
+  post "contacts", to: "contacts#create"
 end

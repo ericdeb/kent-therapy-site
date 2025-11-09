@@ -4,10 +4,11 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'services', label: 'Services' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'theory', label: 'THEORY' },
+    { id: 'approach', label: 'APPROACH' },
+    { id: 'focus', label: 'FOCUS' },
+    { id: 'background', label: 'BACKGROUND' },
+    { id: 'contact', label: 'CONTACT' }
   ]
 
   const handleNavClick = (pageId) => {
@@ -19,7 +20,12 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <h2 style={{ marginTop: '1rem' }}>Kent Stormans Counseling</h2>
+          <button 
+            onClick={() => setCurrentPage('home')}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+          >
+            <h2>Kent Stormans Counseling</h2>
+          </button>
         </div>
         
         <div className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
@@ -32,12 +38,6 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
               {item.label}
             </button>
           ))}
-        </div>
-
-        <div className="nav-cta">
-          <button className="cta-button">
-            Schedule Consultation
-          </button>
         </div>
 
         <button 

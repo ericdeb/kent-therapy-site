@@ -11,24 +11,26 @@ const App = () => {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        return <Home />
+        return <Home setCurrentPage={setCurrentPage} currentPage={currentPage} />
       case 'about':
-        return <About />
+        return <About setCurrentPage={setCurrentPage} currentPage={currentPage} />
       case 'services':
-        return <Services />
-      case 'contact':
-        return <Contact />
+        return <Services setCurrentPage={setCurrentPage} currentPage={currentPage} />
+      case 'connect':
+        return <Contact setCurrentPage={setCurrentPage} currentPage={currentPage} />
       default:
-        return <Home />
+        return <Home setCurrentPage={setCurrentPage} currentPage={currentPage} />
     }
   }
 
   return (
     <div className="app">
-      <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main>
-        {renderPage()}
-      </main>
+      <div style={{ border: '2px solid rgba(0,0,0,.1)', padding: '80px', 
+        marginTop: '100px', marginBottom: '100px', marginLeft: '120px', marginRight: '120px'}}>
+        <main>
+          {renderPage()}
+        </main>
+      </div>
     </div>
   )
 }

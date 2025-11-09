@@ -1,102 +1,51 @@
 import React from 'react'
+import Header from '../Header'
 
-const About = () => {
+const About = ({ setCurrentPage, currentPage }) => {
   return (
-    <div className="about">
-      <div className="container">
-        <div className="about-header">
-          <h2>About Kent Stormans</h2>
-          <p className="about-subtitle">Licensed Therapist & Mental Health Professional</p>
+    <div className="home">
+      {/* Header Section with Name and Contact Info */}
+      <Header setCurrentPage={setCurrentPage} />
+
+      {/* Menu Section */}
+      <div className="nav-menu-wrapper">
+        <div className="nav-line-left"></div>
+        <div className="page-menu">
+          <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
+          <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
+          <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
+          <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
         </div>
+        <div className="nav-line-right"></div>
+      </div>
 
-        <div className="about-content">
-          <div className="about-main">
-            <div className="about-text" style={{ flex: 1 }}>
-              <h3>My Approach to Therapy</h3>
-              <p>
-                I believe that healing happens in relationship. My approach to therapy is collaborative, 
-                compassionate, and grounded in evidence-based practices. I work with individuals who are 
-                ready to explore their inner world and make meaningful changes in their lives.
-              </p>
-              <br />
-              <p>
-                As a trauma-informed therapist, I understand that many of our current struggles are rooted 
-                in past experiences. Together, we'll gently explore these patterns while building new 
-                skills and perspectives that serve you better.
-              </p>
+      {/* Gray divider line below navigation */}
+      <div className="divider-line"></div>
 
-              <br />
-            </div>
+      <div className="about">
+        <div className="container about-content" style={{ textAlign: 'center', padding: '2rem 12rem' }}>
+          <p style={{ marginBottom: '2rem' }}>
+            I work to create a safe space for people from any background. Acceptance is a cornerstone of my practice. My approach is holistic, acknowledging the impact of society systems and empowering clients to explore healing that works for them.
+          </p>
 
-            <div className="about-sidebar">
-              <div className="credentials">
-                <h3>Credentials</h3>
-                <ul>
-                  <li>Licensed Clinical Social Worker (LCSW)</li>
-                  <li>Master's in Clinical Psychology</li>
-                  <li>8+ years of experience</li>
-                  <li>EMDR Certified</li>
-                  <li>Trauma-Informed Care Specialist</li>
-                </ul>
-              </div>
+          <p style={{ marginBottom: '2rem' }}>
+            I help clients embrace their experience, become grounded in their bodies, moving toward connection and freedom. I'm passionate about working with people who have been overlooked or marginalized.
+          </p>
 
-              <div className="specialties">
-                <h3>Specialties</h3>
-                <ul>
-                  <li>Anxiety & Panic Disorders</li>
-                  <li>Depression & Mood Disorders</li>
-                  <li>Trauma & PTSD</li>
-                  <li>Relationship Issues</li>
-                  <li>Life Transitions</li>
-                  <li>Grief & Loss</li>
-                  <li>Self-Esteem & Identity</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ padding: '0 12rem' }}>
-          <h3 style={{ textAlign: 'center' }}>My Background</h3>
-            <p>
-              I completed my Master's in Clinical Psychology and have been practicing for over 8 years. 
-              I specialize in working with adults dealing with anxiety, depression, trauma, and relationship 
-              challenges. My training includes:
-            </p>
-            <ul className="training-list">
-              <li>Trauma-Informed Cognitive Behavioral Therapy (CBT)</li>
-              <li>Eye Movement Desensitization and Reprocessing (EMDR)</li>
-              <li>Internal Family Systems (IFS)</li>
-              <li>Mindfulness-Based Stress Reduction</li>
-              <li>Attachment-Based Therapy</li>
-            </ul>
-            <br />
-            <h3 style={{ textAlign: 'center' }}>What to Expect</h3>
-            <p>
-              In our work together, you can expect a warm, non-judgmental space where your experiences 
-              are validated and your strengths are recognized. I'll meet you where you are and help you 
-              move toward where you want to be.
-            </p>
-        </div>
-
-        <div className="philosophy">
-          <h2>My Philosophy</h2>
-          <blockquote>
-            "Healing is not about becoming perfect. It's about becoming whole. It's about learning to 
-            embrace all parts of yourself with compassion and understanding."
-          </blockquote>
           <p>
-            I believe that everyone has the capacity for growth and healing. My role is to provide 
-            the support, tools, and safe space you need to tap into your own inner wisdom and strength.
+            [degree + credential sentence coming later] My experience has been working with individuals through a community mental health agency in Santa Barbara, CA.
           </p>
         </div>
-
-        <div className="cta-section">
-          <h2>Ready to Work Together?</h2>
-          <p>I'd love to learn more about you and how I can support your journey.</p>
-          <button className="btn-primary">Schedule a Consultation</button>
-        </div>
       </div>
+
+      {/* Gray divider line above footer */}
+      <div className="divider-line"></div>
+
+      {/* Footer */}
+      <footer className="site-footer">
+        <div className="footer-content">
+        </div>
+      </footer>
     </div>
   )
 }
