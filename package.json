@@ -20,7 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vitejs/plugin-react": "^5.0.4",
+    "@vitejs/plugin-react": "^5.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "vite": "^7.1.7"
