@@ -156,7 +156,7 @@ p {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #CCCCCC;
 }
 
 .nav-container {
@@ -278,7 +278,7 @@ p {
 .contact-center,
 .contact-right {
   font-size: 0.90rem;
-  color: #AFAFAF;
+  color: #9F9F9F;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-weight: 600;
