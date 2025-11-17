@@ -2804,3 +2804,1032 @@ Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pi
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='App'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-11-16 19:41:29 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='App'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 6.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+Started GET "/" for 127.0.0.1 at 2025-11-16 19:51:47 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 6.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 19:51:50 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 19:52:01 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 19:52:01 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 19:53:26 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 5.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 19:53:26 -0800
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 19:53:28 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.2ms)
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 19:53:28 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:03:12 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 10.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:03:12 -0800
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:05:49 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:05:49 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:10:05 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:10:05 -0800
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:10:32 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"Eric", "lastName"=>"Deb", "nameYouGoBy"=>"Ed", "dateOfBirth"=>"5/5/1980", "email"=>"[FILTERED]", "phone"=>"2342342343", "gender"=>"male", "state"=>"Alabama", "message"=>""}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.3ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 6.8ms
+Delivered mail 691aa038aa5fd_101b25ff01491e@ericd-KR9NM7G9GW.mail (6.1ms)
+Date: Sun, 16 Nov 2025 20:10:32 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa038aa5fd_101b25ff01491e@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from Eric Deb
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa038a9b0a_101b25ff014894";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa038a9b0a_101b25ff014894
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: Eric Deb
+Name they go by: Ed
+Email: e@e.com
+Phone: 2342342343
+Date of Birth: 5/5/1980
+Gender: Male
+State: Alabama
+
+
+
+
+----==_mimepart_691aa038a9b0a_101b25ff014894
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> Eric Deb</p>
+      <p><strong>Name they go by:</strong> Ed</p>
+    <p><strong>Email:</strong> e@e.com</p>
+    <p><strong>Phone:</strong> 2342342343</p>
+      <p><strong>Date of Birth:</strong> 5/5/1980</p>
+      <p><strong>Gender:</strong> Male</p>
+    <p><strong>State:</strong> Alabama</p>
+    
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa038a9b0a_101b25ff014894--
+
+Completed 200 OK in 55ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:17:41 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"T", "lastName"=>"D", "nameYouGoBy"=>"", "dateOfBirth"=>"3/3/1980", "email"=>"[FILTERED]", "phone"=>"33333333", "gender"=>"male", "state"=>"Washington", "message"=>"asdf"}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 2.7ms
+Delivered mail 691aa1e5aa1ed_101b25ff015172@ericd-KR9NM7G9GW.mail (1.4ms)
+Date: Sun, 16 Nov 2025 20:17:41 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa1e5aa1ed_101b25ff015172@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from T D
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa1e5a9af8_101b25ff015054";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa1e5a9af8_101b25ff015054
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: T D
+Email: e@e2.com
+Phone: 33333333
+Date of Birth: 3/3/1980
+Gender: Male
+State: Washington
+Message:
+asdf
+
+
+
+----==_mimepart_691aa1e5a9af8_101b25ff015054
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> T D</p>
+    <p><strong>Email:</strong> e@e2.com</p>
+    <p><strong>Phone:</strong> 33333333</p>
+      <p><strong>Date of Birth:</strong> 3/3/1980</p>
+      <p><strong>Gender:</strong> Male</p>
+    <p><strong>State:</strong> Washington</p>
+    
+      <h3>Message:</h3>
+      <p><p>asdf</p></p>
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa1e5a9af8_101b25ff015054--
+
+Completed 200 OK in 40ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 13.2ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:20:18 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"f", "lastName"=>"f", "nameYouGoBy"=>"", "dateOfBirth"=>"3/3/1920", "email"=>"[FILTERED]", "phone"=>"2343333333", "gender"=>"male", "state"=>"Alabama", "message"=>""}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 3.8ms
+Delivered mail 691aa282369c0_101b24380153eb@ericd-KR9NM7G9GW.mail (2.4ms)
+Date: Sun, 16 Nov 2025 20:20:18 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa282369c0_101b24380153eb@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from f f
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa2823612c_101b2438015276";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa2823612c_101b2438015276
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: f f
+Email: r@r.com
+Phone: 2343333333
+Date of Birth: 3/3/1920
+Gender: Male
+State: Alabama
+
+
+
+
+----==_mimepart_691aa2823612c_101b2438015276
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> f f</p>
+    <p><strong>Email:</strong> r@r.com</p>
+    <p><strong>Phone:</strong> 2343333333</p>
+      <p><strong>Date of Birth:</strong> 3/3/1920</p>
+      <p><strong>Gender:</strong> Male</p>
+    <p><strong>State:</strong> Alabama</p>
+    
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa2823612c_101b2438015276--
+
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:22:34 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='App'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 8.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:22:34 -0800
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:22:58 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"f", "lastName"=>"f", "nameYouGoBy"=>"", "dateOfBirth"=>"2/2/1980", "email"=>"[FILTERED]", "phone"=>"23434234", "gender"=>"male", "state"=>"Washington", "message"=>"ff"}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.3ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 5.0ms
+Delivered mail 691aa322b0592_6e6f43949851e@ericd-KR9NM7G9GW.mail (2.8ms)
+Date: Sun, 16 Nov 2025 20:22:58 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa322b0592_6e6f43949851e@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from f f
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa322b013d_6e6f4394984ae";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa322b013d_6e6f4394984ae
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: f f
+Email: g@g.com
+Phone: 23434234
+Date of Birth: 2/2/1980
+Gender: Male
+State: Washington
+Message:
+ff
+
+
+
+----==_mimepart_691aa322b013d_6e6f4394984ae
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> f f</p>
+    <p><strong>Email:</strong> g@g.com</p>
+    <p><strong>Phone:</strong> 23434234</p>
+      <p><strong>Date of Birth:</strong> 2/2/1980</p>
+      <p><strong>Gender:</strong> Male</p>
+    <p><strong>State:</strong> Washington</p>
+    
+      <h3>Message:</h3>
+      <p><p>ff</p></p>
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa322b013d_6e6f4394984ae--
+
+Completed 200 OK in 52ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:23:42 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:23:42 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:24:36 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 11.6ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:24:36 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:24:39 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:24:39 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:24:44 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"", "lastName"=>"", "nameYouGoBy"=>"", "dateOfBirth"=>"", "email"=>"[FILTERED]", "phone"=>"", "gender"=>"", "state"=>"", "message"=>""}}
+Completed 422 Unprocessable Content in 25ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:26:32 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 8.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:26:32 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:26:59 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"", "lastName"=>"", "nameYouGoBy"=>"", "dateOfBirth"=>"", "email"=>"[FILTERED]", "phone"=>"", "gender"=>"", "state"=>"", "message"=>""}}
+Completed 422 Unprocessable Content in 23ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:28:25 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 2.6ms)
+Completed 200 OK in 30ms (Views: 7.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:28:25 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:28:29 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:28:29 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:28:34 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"", "lastName"=>"", "nameYouGoBy"=>"", "dateOfBirth"=>"", "email"=>"[FILTERED]", "phone"=>"", "gender"=>"", "state"=>"", "message"=>""}}
+Completed 422 Unprocessable Content in 26ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:28:58 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"a", "lastName"=>"a", "nameYouGoBy"=>"", "dateOfBirth"=>"3/3/1970", "email"=>"[FILTERED]", "phone"=>"234234324", "gender"=>"female", "state"=>"Arizona", "message"=>""}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 2.5ms
+Delivered mail 691aa48a208ac_6e6f5fdc987bd@ericd-KR9NM7G9GW.mail (1.6ms)
+Date: Sun, 16 Nov 2025 20:28:58 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa48a208ac_6e6f5fdc987bd@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from a a
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa48a203da_6e6f5fdc9862f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa48a203da_6e6f5fdc9862f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: a a
+Email: u@u.com
+Phone: 234234324
+Date of Birth: 3/3/1970
+Gender: Female
+State: Arizona
+
+
+
+
+----==_mimepart_691aa48a203da_6e6f5fdc9862f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> a a</p>
+    <p><strong>Email:</strong> u@u.com</p>
+    <p><strong>Phone:</strong> 234234324</p>
+      <p><strong>Date of Birth:</strong> 3/3/1970</p>
+      <p><strong>Gender:</strong> Female</p>
+    <p><strong>State:</strong> Arizona</p>
+    
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa48a203da_6e6f5fdc9862f--
+
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:30:34 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:30:34 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:31:09 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"nn", "lastName"=>"nn", "nameYouGoBy"=>"", "dateOfBirth"=>"2/2/1990", "email"=>"[FILTERED]", "phone"=>"900989009", "gender"=>"", "state"=>"Alabama", "message"=>""}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | GC: 0.3ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 4.4ms
+Delivered mail 691aa50d795cc_6e6f5fdc9893a@ericd-KR9NM7G9GW.mail (1.9ms)
+Date: Sun, 16 Nov 2025 20:31:09 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa50d795cc_6e6f5fdc9893a@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from nn nn
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa50d78d49_6e6f5fdc98819";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa50d78d49_6e6f5fdc98819
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: nn nn
+Email: j@j.com
+Phone: 900989009
+Date of Birth: 2/2/1990
+State: Alabama
+
+
+
+
+----==_mimepart_691aa50d78d49_6e6f5fdc98819
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> nn nn</p>
+    <p><strong>Email:</strong> j@j.com</p>
+    <p><strong>Phone:</strong> 900989009</p>
+      <p><strong>Date of Birth:</strong> 2/2/1990</p>
+    <p><strong>State:</strong> Alabama</p>
+    
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa50d78d49_6e6f5fdc98819--
+
+Completed 200 OK in 31ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:32:04 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"", "lastName"=>"", "nameYouGoBy"=>"", "dateOfBirth"=>"", "email"=>"[FILTERED]", "phone"=>"", "gender"=>"", "state"=>"", "message"=>""}}
+Completed 422 Unprocessable Content in 27ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:33:03 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:33:03 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:33:58 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:33:58 -0800
+Unable to resolve '/images/home_pic.jpeg' for missing asset 'images/home_pic.jpeg' in application.css
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Unable to resolve '/images/services_pic.jpeg' for missing asset 'images/services_pic.jpeg' in application.css
+Unable to resolve '/images/connect_pic.jpg' for missing asset 'images/connect_pic.jpg' in application.css
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:34:26 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"g", "lastName"=>"g", "nameYouGoBy"=>"", "dateOfBirth"=>"08/1/1976", "email"=>"[FILTERED]", "phone"=>"23423432", "gender"=>"", "state"=>"Arizona", "message"=>"asdf"}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | GC: 0.0ms)
+ContactMailer#contact_email: processed outbound mail in 1.9ms
+Delivered mail 691aa5d21b114_6e6f6f2c99161@ericd-KR9NM7G9GW.mail (1.4ms)
+Date: Sun, 16 Nov 2025 20:34:26 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa5d21b114_6e6f6f2c99161@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from g g
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa5d21ad57_6e6f6f2c990b0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa5d21ad57_6e6f6f2c990b0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: g g
+Email: b@b.com
+Phone: 23423432
+Date of Birth: 08/1/1976
+State: Arizona
+Message:
+asdf
+
+
+
+----==_mimepart_691aa5d21ad57_6e6f6f2c990b0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> g g</p>
+    <p><strong>Email:</strong> b@b.com</p>
+    <p><strong>Phone:</strong> 23423432</p>
+      <p><strong>Date of Birth:</strong> 08/1/1976</p>
+    <p><strong>State:</strong> Arizona</p>
+    
+      <h3>Message:</h3>
+      <p><p>asdf</p></p>
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa5d21ad57_6e6f6f2c990b0--
+
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:36:09 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:36:10 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:36:45 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 2.2ms)
+Completed 200 OK in 28ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:36:45 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:37:37 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:37:37 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-11-16 20:38:29 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-11-16 20:38:29 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/contacts" for 127.0.0.1 at 2025-11-16 20:39:02 -0800
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"firstName"=>"fj", "lastName"=>"jj", "nameYouGoBy"=>"", "dateOfBirth"=>"3/3/1970", "email"=>"[FILTERED]", "phone"=>"098089", "gender"=>"", "state"=>"Alaska", "message"=>""}}
+  Rendering layout layouts/mailer.html.erb
+  Rendering contact_mailer/contact_email.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.html.erb within layouts/mailer (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendering layout layouts/mailer.text.erb
+  Rendering contact_mailer/contact_email.text.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.text.erb within layouts/mailer (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | GC: 0.1ms)
+ContactMailer#contact_email: processed outbound mail in 1.8ms
+Delivered mail 691aa6e6ba4a1_6e6f5fdc99352@ericd-KR9NM7G9GW.mail (1.4ms)
+Date: Sun, 16 Nov 2025 20:39:02 -0800
+From: noreply@kentstormanstherapy.com
+To: kent@kentstormanstherapy.com
+Message-ID: <691aa6e6ba4a1_6e6f5fdc99352@ericd-KR9NM7G9GW.mail>
+Subject: New Contact Form Submission from fj jj
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_691aa6e6ba17d_6e6f5fdc9924b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_691aa6e6ba17d_6e6f5fdc9924b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+New Contact Form Submission
+
+Contact Information:
+Name: fj jj
+Email: klj@lkj.com
+Phone: 098089
+Date of Birth: 3/3/1970
+State: Alaska
+
+
+
+
+----==_mimepart_691aa6e6ba17d_6e6f5fdc9924b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!-- BEGIN app/views/layouts/mailer.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN app/views/contact_mailer/contact_email.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    
+    <h3>Contact Information:</h3>
+    <p><strong>Name:</strong> fj jj</p>
+    <p><strong>Email:</strong> klj@lkj.com</p>
+    <p><strong>Phone:</strong> 098089</p>
+      <p><strong>Date of Birth:</strong> 3/3/1970</p>
+    <p><strong>State:</strong> Alaska</p>
+    
+  </body>
+</html>
+
+<!-- END app/views/contact_mailer/contact_email.html.erb -->
+  </body>
+</html>
+<!-- END app/views/layouts/mailer.html.erb -->
+----==_mimepart_691aa6e6ba17d_6e6f5fdc9924b--
+
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+

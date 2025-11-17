@@ -1,9 +1,15 @@
 New Contact Form Submission
 
+Contact Information:
 Name: <%= @full_name %>
-Email: <%= @contact.email %>
-Subject: <%= @contact.subject %>
-
-Message:
-<%= @contact.message %>
+<% if @contact.nameYouGoBy.present? %>Name they go by: <%= @contact.nameYouGoBy %>
+<% end %>Email: <%= @contact.email %>
+Phone: <%= @contact.phone %>
+<% if @contact.dateOfBirth.present? %>Date of Birth: <%= @contact.dateOfBirth %>
+<% end %><% if @contact.gender.present? %>Gender: <%= @contact.gender.humanize %>
+<% end %>State: <%= @contact.state %>
+<% if @contact.subject.present? %>Subject: <%= @contact.subject %>
+<% end %>
+<% if @contact.message.present? %>Message:
+<%= @contact.message %><% end %>
 

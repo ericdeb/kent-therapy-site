@@ -6,12 +6,28 @@
   <body>
     <h2>New Contact Form Submission</h2>
     
+    <h3>Contact Information:</h3>
     <p><strong>Name:</strong> <%= @full_name %></p>
+    <% if @contact.nameYouGoBy.present? %>
+      <p><strong>Name they go by:</strong> <%= @contact.nameYouGoBy %></p>
+    <% end %>
     <p><strong>Email:</strong> <%= @contact.email %></p>
-    <p><strong>Subject:</strong> <%= @contact.subject %></p>
+    <p><strong>Phone:</strong> <%= @contact.phone %></p>
+    <% if @contact.dateOfBirth.present? %>
+      <p><strong>Date of Birth:</strong> <%= @contact.dateOfBirth %></p>
+    <% end %>
+    <% if @contact.gender.present? %>
+      <p><strong>Gender:</strong> <%= @contact.gender.humanize %></p>
+    <% end %>
+    <p><strong>State:</strong> <%= @contact.state %></p>
+    <% if @contact.subject.present? %>
+      <p><strong>Subject:</strong> <%= @contact.subject %></p>
+    <% end %>
     
-    <h3>Message:</h3>
-    <p><%= simple_format(@contact.message) %></p>
+    <% if @contact.message.present? %>
+      <h3>Message:</h3>
+      <p><%= simple_format(@contact.message) %></p>
+    <% end %>
   </body>
 </html>
 
