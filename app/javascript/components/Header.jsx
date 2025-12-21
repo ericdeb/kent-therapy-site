@@ -15,8 +15,8 @@ const Header = ({ setCurrentPage }) => {
               Kent Stormans Therapy
           </h1>  
           <div className="contact-info">
-            <div className="contact-left">Seattle, WA</div>
-            <div className="contact-center">503.395.7192</div>
+            <div className="contact-left">600 N. 36th St. #220 <br />Seattle WA 98103</div>
+            <div className="contact-center">(503) 395-7192</div>
             <div className="contact-right" onClick={() => setIsModalOpen(true)} style={{ cursor: 'pointer' }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" className="icon-email"><path fill="#ADADAD" fillRule="evenodd" d="M2.333.333h13.334c.916 0 1.666.75 1.666 1.667v10c0 .917-.75 1.667-1.666 1.667H2.333c-.916 0-1.666-.75-1.666-1.667V2c0-.917.75-1.667 1.666-1.667zm7.55 6.95l5.45-3.408a.708.708 0 10-.75-1.2L9 6.167 3.417 2.675a.708.708 0 10-.75 1.2l5.45 3.408a1.65 1.65 0 001.766 0z" clipRule="evenodd"></path></svg>
               Contact

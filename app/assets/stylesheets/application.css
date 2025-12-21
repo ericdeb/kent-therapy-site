@@ -121,8 +121,7 @@ p {
 
 .about-content {
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .menu-item {
@@ -339,7 +338,7 @@ p {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 .hero-image::before {
@@ -362,11 +361,11 @@ p {
 
 .hero-title {
   font-size: 3rem;
-  font-weight: 500;
-  color: #222;
+  font-weight: 400;
+  color: #888;
   margin-bottom: 2rem;
   line-height: 1.2;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.02em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -475,6 +474,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.about-hero-image {
+  width: 400px;
+  margin: 0 auto;
+  height: 400px;
+  background-image: url('/images/kent2.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 25px;
 }
 
 .services-hero-image::before {

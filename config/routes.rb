@@ -24,6 +24,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
-  # Contact form submission
+  # Contact form submission (full form with more fields)
   post "contacts", to: "contacts#create"
+
+  # Simple inquiry form submission
+  post "inquiry", to: "inquiries#create"
 end

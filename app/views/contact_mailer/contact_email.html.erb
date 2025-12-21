@@ -6,28 +6,60 @@
   <body>
     <h2>New Contact Form Submission</h2>
     
-    <h3>Contact Information:</h3>
-    <p><strong>Name:</strong> <%= @full_name %></p>
-    <% if @contact.nameYouGoBy.present? %>
-      <p><strong>Name they go by:</strong> <%= @contact.nameYouGoBy %></p>
-    <% end %>
-    <p><strong>Email:</strong> <%= @contact.email %></p>
-    <p><strong>Phone:</strong> <%= @contact.phone %></p>
-    <% if @contact.dateOfBirth.present? %>
-      <p><strong>Date of Birth:</strong> <%= @contact.dateOfBirth %></p>
-    <% end %>
-    <% if @contact.gender.present? %>
-      <p><strong>Gender:</strong> <%= @contact.gender.humanize %></p>
-    <% end %>
-    <p><strong>State:</strong> <%= @contact.state %></p>
-    <% if @contact.subject.present? %>
-      <p><strong>Subject:</strong> <%= @contact.subject %></p>
-    <% end %>
+    <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>First Name:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.firstName %></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Last Name:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.lastName %></td>
+      </tr>
+      <% if @contact.nameYouGoBy.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Name They Go By:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.nameYouGoBy %></td>
+      </tr>
+      <% end %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.email %></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.phone %></td>
+      </tr>
+      <% if @contact.dateOfBirth.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Date of Birth:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.dateOfBirth %></td>
+      </tr>
+      <% end %>
+      <% if @contact.gender.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Gender:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.gender.humanize %></td>
+      </tr>
+      <% end %>
+      <% if @contact.state.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>State:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.state %></td>
+      </tr>
+      <% end %>
+      <% if @contact.subject.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Subject:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.subject %></td>
+      </tr>
+      <% end %>
+    </table>
     
     <% if @contact.message.present? %>
-      <h3>Message:</h3>
-      <p><%= simple_format(@contact.message) %></p>
+    <h3>Message:</h3>
+    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px;">
+      <%= simple_format(@contact.message) %>
+    </div>
     <% end %>
   </body>
 </html>
-

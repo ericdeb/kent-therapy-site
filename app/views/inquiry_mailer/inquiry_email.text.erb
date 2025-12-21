@@ -1,0 +1,12 @@
+New Inquiry from Website
+========================
+
+First Name: <%= @inquiry.firstName %>
+Last Name: <%= @inquiry.lastName %>
+Email: <%= @inquiry.email %>
+Phone: <%= @inquiry.phone %>
+<% if @inquiry.preferredContactMethod.present? %>Preferred Contact Method: <%= @inquiry.preferredContactMethod.humanize %>
+<% end %>
+Message:
+--------
+<%= @inquiry.message %>

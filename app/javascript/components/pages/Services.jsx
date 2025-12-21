@@ -51,9 +51,9 @@ const Services = ({ setCurrentPage, currentPage }) => {
           <div className="service-bubble">relational approach</div>
           <div className="service-bubble">Internal Family Systems model</div>
           <div className="service-bubble">somatic work (body-based)</div>
-          <div className="service-bubble">nature therapy</div>
+          <div className="service-bubble">walk + talk therapy</div>
           <div className="service-bubble">trauma-informed</div>
-          <div className="service-bubble">attachment-based</div>
+          <div className="service-bubble">attachment-informed</div>
           <div className="service-bubble">Acceptance and Commitment therapy</div>
           <div className="service-bubble">mindfulness</div>
         </div>
@@ -62,7 +62,9 @@ const Services = ({ setCurrentPage, currentPage }) => {
       <div className="fees-content">
         <h2 className="services-title">FEES</h2>
         <p style={{ marginTop: '-20px' }}>
-          50 minute session - $175
+          50 minute session - $175 <br />
+          I offer sliding-scale reduced fees to some clients <br />
+          I don't bill insurance right now. I can give clients a superbill
         </p>
       </div>
       

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Inquiry from Website</h2>
+    
+    <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>First Name:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @inquiry.firstName %></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Last Name:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @inquiry.lastName %></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @inquiry.email %></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @inquiry.phone %></td>
+      </tr>
+      <% if @inquiry.preferredContactMethod.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Preferred Contact Method:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @inquiry.preferredContactMethod.humanize %></td>
+      </tr>
+      <% end %>
+    </table>
+    
+    <h3>Message:</h3>
+    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px;">
+      <%= simple_format(@inquiry.message) %>
+    </div>
+  </body>
+</html>

@@ -26,7 +26,7 @@ const Home = ({ setCurrentPage, currentPage }) => {
       <section className="hero-section">
         <div className="hero-image">
           <div className="hero-overlay">
-            <h1 className="hero-title">Welcome</h1>
+            <h1 className="hero-title">WELCOME</h1>
           </div>
         </div>
       </section>
@@ -50,11 +50,12 @@ const Home = ({ setCurrentPage, currentPage }) => {
       {/* Gray divider line above footer */}
       <div className="divider-line"></div>
 
-      {/* Footer */}
-      <footer className="site-footer">
-        <div className="footer-content">
-        </div>
-      </footer>
+      <div className="services-bubble-content" style={{ marginBottom: '-2rem', display: 'flex', justifyContent: 'center' }}>
+        <a href="https://kent.sessionshealth.com/" target="_blank" rel="noopener noreferrer" className="service-bubble" style={{ textDecoration: 'none', padding: '1rem 2rem', fontSize: '1.2rem' }}>
+          Client Portal
+        </a>
+      </div>
+
     </div>
   )
 }

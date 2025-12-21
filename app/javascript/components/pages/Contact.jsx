@@ -6,7 +6,8 @@ const Contact = ({ setCurrentPage, currentPage }) => {
     firstName: '',
     lastName: '',
     email: '',
-    subject: '',
+    phone: '',
+    preferredContactMethod: 'phone',
     message: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -38,7 +39,7 @@ const Contact = ({ setCurrentPage, currentPage }) => {
 
     try {
       const csrfToken = getCSRFToken()
-      const response = await fetch('/contacts', {
+      const response = await fetch('/inquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +47,7 @@ const Contact = ({ setCurrentPage, currentPage }) => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          contact: formData
+          inquiry: formData
         })
       })
 
@@ -59,7 +60,8 @@ const Contact = ({ setCurrentPage, currentPage }) => {
           firstName: '',
           lastName: '',
           email: '',
-          subject: '',
+          phone: '',
+          preferredContactMethod: 'phone',
           message: ''
         })
       } else {
@@ -106,17 +108,17 @@ const Contact = ({ setCurrentPage, currentPage }) => {
             
             <div className="contact-office">
               <p>
-              If you'd like to explore the possibility of working together, you're welcome to schedule a free consultation. I'd love to hear from you
+              If you'd like to explore the possibility of working together, you're welcome to schedule a free consultation. I'd love to hear from you.
               </p>
             </div>
 
             <div className="contact-phone">
-              <strong>Phone: 503.395.7192</strong>
+              <strong>Phone: (503) 395-7192</strong>
             </div>
 
             <div className="contact-map-container">
               <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.3766%2C47.6763%2C-122.3666%2C47.6863&layer=mapnik&marker=47.6813%2C-122.3716"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.3560088453697%2C47.64668040723378%2C-122.3460088453697%2C47.65668040723378&layer=mapnik&marker=47.65168040723378%2C-122.3510088453697"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -125,6 +127,11 @@ const Contact = ({ setCurrentPage, currentPage }) => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Office Location Map"
               ></iframe>
+            </div>
+            <div className="services-bubble-content" style={{ marginBottom: '-2rem', display: 'flex', justifyContent: 'center' }}>
+              <a href="https://kent.sessionshealth.com/" target="_blank" rel="noopener noreferrer" className="service-bubble" style={{ textDecoration: 'none', padding: '1rem 2rem', fontSize: '1.2rem' }}>
+                Client Portal
+              </a>
             </div>
           </div>
 
@@ -188,16 +195,32 @@ const Contact = ({ setCurrentPage, currentPage }) => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="subject">Subject</label>
+                <label htmlFor="phone">Phone Number</label>
                 <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
                 />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="preferredContactMethod">Preferred Contact Method</label>
+                <select
+                  id="preferredContactMethod"
+                  name="preferredContactMethod"
+                  value={formData.preferredContactMethod}
+                  onChange={handleChange}
+                  required
+                  disabled={isSubmitting}
+                >
+                  <option value="phone">Phone Call</option>
+                  <option value="text">Text Message</option>
+                  <option value="email">Email</option>
+                </select>
               </div>
 
               <div className="form-group">

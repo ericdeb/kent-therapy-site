@@ -19,8 +19,9 @@ const About = ({ setCurrentPage, currentPage }) => {
         <div className="nav-line-right"></div>
       </div>
 
-      {/* Gray divider line below navigation */}
-      <div className="divider-line"></div>
+      <section className="services-hero-section">
+        <div className="about-hero-image"></div>
+      </section>
 
       <div className="about">
         <div className="container about-content" style={{ textAlign: 'center', padding: '2rem 12rem' }}>
@@ -33,7 +34,7 @@ const About = ({ setCurrentPage, currentPage }) => {
           </p>
 
           <p>
-            [degree + credential sentence coming later] My experience has been working with individuals through a community mental health agency in Santa Barbara, CA.
+          I'm a Licensed Mental Health Counselor (# LH70028267) in the state of Washington, and a Licensed Professional Clinical Counselor (# LPCC19801) in California. My experience has been working with individuals through a community mental health agency in Santa Barbara, CA.
           </p>
         </div>
       </div>
