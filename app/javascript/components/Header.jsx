@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 import ContactModal from './ContactModal'
 
-const Header = ({ setCurrentPage }) => {
+const Header = ({ setCurrentPage, isMobile = false }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  // On mobile, we don't show the header section (mobile header handles this)
+  if (isMobile) {
+    return null
+  }
 
   return (
     <>
@@ -30,4 +35,3 @@ const Header = ({ setCurrentPage }) => {
 }
 
 export default Header
-

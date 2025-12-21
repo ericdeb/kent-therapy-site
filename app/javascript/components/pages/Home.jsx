@@ -1,26 +1,28 @@
 import React from 'react'
 import Header from '../Header'
 
-const Home = ({ setCurrentPage, currentPage }) => {
+const Home = ({ setCurrentPage, currentPage, isMobile }) => {
   return (
     <div className="home">
-      {/* Header Section with Name and Contact Info */}
-      <Header setCurrentPage={setCurrentPage} />
+      {/* Header Section with Name and Contact Info - hidden on mobile */}
+      <Header setCurrentPage={setCurrentPage} isMobile={isMobile} />
 
-      {/* Menu Section - matches reference site */}
-      <div className="nav-menu-wrapper">
-        <div className="nav-line-left"></div>
-        <div className="page-menu">
-          <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
-          <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
-          <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
-          <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
+      {/* Menu Section - matches reference site, hidden on mobile */}
+      {!isMobile && (
+        <div className="nav-menu-wrapper">
+          <div className="nav-line-left"></div>
+          <div className="page-menu">
+            <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
+            <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
+            <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
+            <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
+          </div>
+          <div className="nav-line-right"></div>
         </div>
-        <div className="nav-line-right"></div>
-      </div>
+      )}
 
       {/* Gray divider line below navigation */}
-      <div className="divider-line"></div>
+      {!isMobile && <div className="divider-line"></div>}
 
       {/* Hero Section with Image and Welcome Text */}
       <section className="hero-section">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../Header'
 
-const Contact = ({ setCurrentPage, currentPage }) => {
+const Contact = ({ setCurrentPage, currentPage, isMobile }) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -77,23 +77,25 @@ const Contact = ({ setCurrentPage, currentPage }) => {
 
   return (
     <div className="home">
-      {/* Header Section with Name and Contact Info */}
-      <Header setCurrentPage={setCurrentPage} />
+      {/* Header Section with Name and Contact Info - hidden on mobile */}
+      <Header setCurrentPage={setCurrentPage} isMobile={isMobile} />
 
-      {/* Menu Section */}
-      <div className="nav-menu-wrapper">
-        <div className="nav-line-left"></div>
-        <div className="page-menu">
-          <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
-          <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
-          <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
-          <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
+      {/* Menu Section - hidden on mobile */}
+      {!isMobile && (
+        <div className="nav-menu-wrapper">
+          <div className="nav-line-left"></div>
+          <div className="page-menu">
+            <button className={`menu-item ${currentPage === 'home' ? 'active' : ''}`} onClick={() => setCurrentPage('home')}>HOME</button>
+            <button className={`menu-item ${currentPage === 'about' ? 'active' : ''}`} onClick={() => setCurrentPage('about')}>ABOUT</button>
+            <button className={`menu-item ${currentPage === 'services' ? 'active' : ''}`} onClick={() => setCurrentPage('services')}>SERVICES</button>
+            <button className={`menu-item ${currentPage === 'connect' ? 'active' : ''}`} onClick={() => setCurrentPage('connect')}>CONNECT</button>
+          </div>
+          <div className="nav-line-right"></div>
         </div>
-        <div className="nav-line-right"></div>
-      </div>
+      )}
 
       {/* Gray divider line below navigation */}
-      <div className="divider-line"></div>
+      {!isMobile && <div className="divider-line"></div>}
 
       {/* Hero Section with Image */}
       <section className="connect-hero-section">
@@ -102,7 +104,7 @@ const Contact = ({ setCurrentPage, currentPage }) => {
 
       {/* Contact Content Section */}
       <div className="contact-page-content">
-        <div className="contact-two-column">
+        <div className={`contact-two-column ${isMobile ? 'mobile-contact-layout' : ''}`}>
           {/* Left Column: Contact Info and Map */}
           <div className="contact-left-column">
             
@@ -113,14 +115,14 @@ const Contact = ({ setCurrentPage, currentPage }) => {
             </div>
 
             <div className="contact-phone">
-              <strong>Phone: (503) 395-7192</strong>
+              <strong>Phone: <a href="tel:5033957192" style={{ color: 'inherit', textDecoration: 'none' }}>(503) 395-7192</a></strong>
             </div>
 
             <div className="contact-map-container">
               <iframe
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-122.3560088453697%2C47.64668040723378%2C-122.3460088453697%2C47.65668040723378&layer=mapnik&marker=47.65168040723378%2C-122.3510088453697"
                 width="100%"
-                height="400"
+                height={isMobile ? "250" : "400"}
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
@@ -139,7 +141,7 @@ const Contact = ({ setCurrentPage, currentPage }) => {
           <div className="contact-right-column">
             <div className="contact-form-intro">
               <p>
-              To schedule an appointment or if you have any questions, please fill out the form below and I’ll get back to you as soon as possible.
+              To schedule an appointment or if you have any questions, please fill out the form below and I'll get back to you as soon as possible.
               </p>
             </div>
 
@@ -157,7 +159,7 @@ const Contact = ({ setCurrentPage, currentPage }) => {
 
               <div className="form-group-name form-group">
                 <label htmlFor="firstName">Name</label>
-                <div className="name-fields">
+                <div className={`name-fields ${isMobile ? 'mobile-name-fields' : ''}`}>
                   <input
                     type="text"
                     id="firstName"
