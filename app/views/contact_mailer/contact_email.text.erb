@@ -9,6 +9,7 @@ Phone: <%= @contact.phone %>
 <% if @contact.dateOfBirth.present? %>Date of Birth: <%= @contact.dateOfBirth %>
 <% end %><% if @contact.gender.present? %>Gender: <%= @contact.gender.humanize %>
 <% end %><% if @contact.state.present? %>State: <%= @contact.state %>
+<% end %><% if @contact.preferredContactMethod.present? %>Preferred Contact Method: <%= @contact.preferredContactMethod.humanize %>
 <% end %><% if @contact.subject.present? %>Subject: <%= @contact.subject %>
 <% end %>
 <% if @contact.message.present? %>

@@ -9,6 +9,7 @@ class ContactForm
   attribute :email, :string
   attribute :phone, :string
   attribute :gender, :string
+  attribute :preferredContactMethod, :string
   attribute :state, :string
   attribute :subject, :string
   attribute :message, :string

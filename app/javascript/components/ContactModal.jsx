@@ -10,6 +10,7 @@ const ContactModal = ({ isOpen, onClose }) => {
     email: '',
     phone: '',
     gender: '',
+    preferredContactMethod: 'phone',
     state: '',
     message: ''
   })
@@ -90,6 +91,7 @@ const ContactModal = ({ isOpen, onClose }) => {
           email: '',
           phone: '',
           gender: '',
+          preferredContactMethod: 'phone',
           state: '',
           message: ''
         })
@@ -261,25 +263,46 @@ const ContactModal = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <div className="contact-modal-form-group">
-              <label htmlFor="state">
-                State <span className="required-asterisk">*</span>
-              </label>
-              <select
-                id="state"
-                name="state"
-                className="contact-modal-state-select"
-                value={formData.state}
-                onChange={handleChange}
-                disabled={isSubmitting}
-              >
-                {states.map(state => (
-                  <option key={state} value={state === 'Select' ? '' : state}>
-                    {state}
-                  </option>
-                ))}
-              </select>
-              <p className="contact-modal-helper-text">Select the state you live in.</p>
+
+            <div className="contact-modal-form-row">
+              <div className="contact-modal-form-group">
+                <label htmlFor="preferredContactMethod">
+                  Preferred Contact Method <span className="required-asterisk">*</span>
+                </label>
+                <select
+                  id="preferredContactMethod"
+                  name="preferredContactMethod"
+                  className="contact-modal-state-select"
+                  value={formData.preferredContactMethod}
+                  onChange={handleChange}
+                  disabled={isSubmitting}
+                >
+                  <option value="phone">Phone Call</option>
+                  <option value="text">Text Message</option>
+                  <option value="email">Email</option>
+                </select>
+              </div>
+
+              <div className="contact-modal-form-group">
+                <label htmlFor="state">
+                  State <span className="required-asterisk">*</span>
+                </label>
+                <select
+                  id="state"
+                  name="state"
+                  className="contact-modal-state-select"
+                  value={formData.state}
+                  onChange={handleChange}
+                  disabled={isSubmitting}
+                >
+                  {states.map(state => (
+                    <option key={state} value={state === 'Select' ? '' : state}>
+                      {state}
+                    </option>
+                  ))}
+                </select>
+                <p className="contact-modal-helper-text">Select the state you live in.</p>
+              </div>
             </div>
           </div>
 

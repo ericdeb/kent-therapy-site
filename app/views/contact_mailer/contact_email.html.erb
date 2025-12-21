@@ -47,6 +47,12 @@
         <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.state %></td>
       </tr>
       <% end %>
+      <% if @contact.preferredContactMethod.present? %>
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Preferred Contact Method:</strong></td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><%= @contact.preferredContactMethod.humanize %></td>
+      </tr>
+      <% end %>
       <% if @contact.subject.present? %>
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Subject:</strong></td>
