@@ -6,8 +6,8 @@ class ContactMailer < ApplicationMailer
     # Update this email address to the recipient email
     subject_line = contact.subject.present? ? "New Contact Form Submission: #{contact.subject}" : "New Contact Form Submission from #{@full_name}"
     mail(
-      to: ENV.fetch('CONTACT_EMAIL', 'eric.deb7@gmail.com'),
-      from: ENV.fetch('CONTACT_FROM_EMAIL', 'eric.deb7@gmail.com'),
+      to: ENV.fetch('CONTACT_EMAIL', 'kent@kentstormanstherapy.com'),
+      from: ENV.fetch('CONTACT_FROM_EMAIL', 'kent@kentstormanstherapy.com'),
       subject: subject_line
     )
   end
