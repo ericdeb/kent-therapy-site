@@ -1,7 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const MobileHeader = ({ currentPage, setCurrentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  // Close menu on orientation change to prevent UI issues
+  useEffect(() => {
+    const handleOrientationChange = () => {
+      setIsMenuOpen(false)
+    }
+
+    window.addEventListener('orientationchange', handleOrientationChange)
+    window.addEventListener('resize', handleOrientationChange)
+
+    return () => {
+      window.removeEventListener('orientationchange', handleOrientationChange)
+      window.removeEventListener('resize', handleOrientationChange)
+    }
+  }, [])
 
   const handleNavClick = (pageId) => {
     setCurrentPage(pageId)

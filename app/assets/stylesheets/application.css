@@ -32,10 +32,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for better mobile support */
 }
 
 .app {
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 main {
@@ -1523,6 +1525,7 @@ p {
 /* Mobile App Container */
 .app-mobile {
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height - works better with mobile rotation */
   display: flex;
   flex-direction: column;
 }
