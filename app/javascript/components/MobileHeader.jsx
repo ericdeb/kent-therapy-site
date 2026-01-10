@@ -73,7 +73,7 @@ const MobileHeader = ({ currentPage, setCurrentPage }) => {
         
         <div className="mobile-nav-contact-info">
           <div className="mobile-nav-phone">
-            <a href="tel:5033957192">(503) 395-7192</a>
+            <a href="tel:4255222472">(425) 522-2472</a>
           </div>
           <div className="mobile-nav-address">
             600 N. 36th St. #220<br />Seattle WA 98103

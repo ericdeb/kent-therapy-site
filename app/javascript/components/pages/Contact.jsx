@@ -115,7 +115,7 @@ const Contact = ({ setCurrentPage, currentPage, isMobile }) => {
             </div>
 
             <div className="contact-phone">
-              <strong>Phone: <a href="tel:5033957192" style={{ color: 'inherit', textDecoration: 'none' }}>(503) 395-7192</a></strong>
+              <strong>Phone: <a href="tel:4255222472" style={{ color: 'inherit', textDecoration: 'none' }}>(425) 522-2472</a></strong>
             </div>
 
             <div className="contact-map-container">
