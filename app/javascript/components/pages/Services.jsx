@@ -66,7 +66,8 @@ const Services = ({ setCurrentPage, currentPage, isMobile }) => {
         <p style={{ marginTop: '-20px' }}>
           50 minute session - $175 <br />
           I offer sliding-scale reduced fees to some clients <br />
-          I don't bill insurance right now. I can give clients a superbill
+          I'm In-network in WA state with: Regence Blue Shield, Cigna, Aetna, Quest, and Carelon. <br /> 
+          In-network in CA with Blue Shield, Cigna, Aetna, Quest, and Carelon, and others.
         </p>
       </div>
       
