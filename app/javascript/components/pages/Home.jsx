@@ -41,7 +41,6 @@ const Home = ({ setCurrentPage, currentPage, isMobile }) => {
             I'm a therapist in Washington state + California, working with adults and teens, in-person
             and via telehealth / online sessions. I support people through challenges like anxiety, 
             trauma / abuse, relationships, depression, and work with neurodiverse individuals. 
-            My approach is holistic, acknowledging the impact of society systems and empowering clients to explore healing that works for them.
           </p>
           <p style={{ textAlign: 'center' }}>
             I'm here to meet you where you're at. Therapy that's relational, connection-oriented. Finding a sense of home in yourself, even if home feels far away.
